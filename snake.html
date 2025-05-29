@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: #222;
+        }
+
+        table {
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 50px;
+            border-collapse: collapse;
+        }
+
+        td {
+            background-color: white;
+            height: 30px;
+            width: 30px;
+            border: 1px solid black;
+        }
+
+        .snake {
+            background-image: url("graphics.png");
+            background-size: 150px 120px;
+            background-position: -120px -30px;
+            /* 
+                // głowa
+                background-position: -120px 0px; // glowa w prawo
+                background-position: -90px 0px; // glowa w górę
+                background-position: -120px -30px; // glowa w dół
+                background-position: -90px -30px; // glowa w lewo
+
+                // ogon
+                background-position: -120px -60px; // ogon od lewej do prawej
+                background-position: -120px -90px; // ogon z góry na dół
+                background-position: -90px -60px; // ogon z dołu do góry
+                background-position: -90px -90px; // ogon z prawej do lewej
+
+                // jabłko
+                background-position: 0px -90px; // jabłko
+
+                // zakręty
+                background-position: 0px 0px; // zakręt dół -> prawo
+                background-position: 0px -30px; // zakręt góra -> prawo
+                background-position: -60px 0px; // zakręt lewo -> dół
+                background-position: -60px -60px; // zakręt góra -> lewo
+
+                // proste odcinki
+                background-position: -30px 0px; // prosta pozioma
+                background-position: -60px -30px; // prosta pionowa
+            */
+        }
+
+        .apple {
+            background-image: url("graphics.png");
+            background-size: 150px 120px;
+            background-position: 0px -90px;
+        }
+
+        .band {
+            background-color: #619b7e;
+        }
+    </style>
+
+</head>
+
+<body>
+    <script src="./script.js"></script>
+</body>
+
+</html>
